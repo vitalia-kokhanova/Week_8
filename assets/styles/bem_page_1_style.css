@@ -1,0 +1,41 @@
+/* Общие стили */
+.page {
+  max-width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
+/* Стили для шапки */
+
+.page__header {
+  max-width: 100%;
+  grid-row: 1/2;
+}
+
+/* Стили для основной части */
+
+.page__main {
+  max-width: 100%;
+  grid-row: 2/3;
+  display: grid;
+  grid-template: 75% 25% / 8% 37.6% 1fr;
+}
+
+/* Стили для блока с заголовком */
+
+.main__content {
+  grid-area: 1/2/2/3;
+}
+
+/* Стили для блока с картинкой */
+
+.main__background {
+  grid-area: 1/3/2/4;
+}
+
+/* Стили для блока с меню */
+
+.main__footer-nav {
+  grid-area: 2/2/3/3;
+}
