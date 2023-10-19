@@ -1,9 +1,18 @@
 /* Общие стили */
+@font-face {
+  font-family: "Intro Bold Caps";
+  src: url("../fonts/Intro-Bold-Caps.eot");
+  src: url("../fonts/Intro-Bold-Caps.eot") format("embedded-opentype"),
+    url("../fonts/Intro-Bold-Caps.woff") format("woff"),
+    url("../fonts/Intro-Bold-Caps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .page {
   max-width: 100%;
-  height: 100vh;
   display: grid;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 10% 95%;
 }
 
 /* Стили для шапки */
@@ -13,11 +22,45 @@
   grid-row: 1/2;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.header__block {
+  width: 89.6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 201px;
+  height: 40px;
+}
+
+.header__button {
+  background-image: url("../images/button-cart.png");
+  width: 115px;
+  height: 38px;
+}
+
+.button {
+  background-size: cover;
+  background-color: #ffffff00;
+  border: none;
+  padding: 0;
+}
+
 /* Стили для основной части */
 
 .page__main {
   max-width: 100%;
   grid-row: 2/3;
+}
+
+.main {
   display: grid;
   grid-template: 75% 25% / 8% 37.6% 1fr;
 }
@@ -26,16 +69,85 @@
 
 .main__content {
   grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.title {
+  font-family: "Intro Bold Caps";
+  font-weight: 400;
+}
+
+.main__title {
+  margin: 0 0 10px 0;
+}
+
+.main__title_size {
+  font-size: 60px;
+  letter-spacing: 0.1rem;
+  line-height: 125%;
+}
+
+.text {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.main_text {
+  margin: 0 0 30px 0;
+}
+
+.main__button {
+  background-image: url("../images/button-buy.png");
+  width: 270px;
+  height: 84px;
 }
 
 /* Стили для блока с картинкой */
 
 .main__background {
-  grid-area: 1/3/2/4;
+  grid-area: 1/3/3/4;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.main__image {
+  object-fit: cover;
+  box-sizing: border-box;
 }
 
 /* Стили для блока с меню */
 
 .main__footer-nav {
   grid-area: 2/2/3/3;
+  display: flex;
+  align-items: center;
+}
+
+.main__nav {
+  display: flex;
+  width: 100%;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu__item,
+.menu__link:link,
+.menu__link:visited {
+  color: #5222d0;
+}
+
+.link {
+  text-decoration: none;
 }
