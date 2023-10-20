@@ -1,0 +1,246 @@
+/* Общие стили */
+
+@font-face {
+  font-family: "Intro Bold Caps";
+  src: url("../fonts/Intro-Bold-Caps.eot");
+  src: url("../fonts/Intro-Bold-Caps.eot") format("embedded-opentype"),
+    url("../fonts/Intro-Bold-Caps.woff") format("woff"),
+    url("../fonts/Intro-Bold-Caps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page {
+  max-width: 100%;
+  display: grid;
+  grid-template-rows: 20vh 145vh 28vh;
+}
+
+/* Стили для шапки */
+
+.page__header {
+  max-width: 100%;
+  grid-row: 1/2;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header_align_center {
+  align-items: center;
+}
+
+.header__block {
+  max-width: 89.6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 201px;
+  height: 40px;
+}
+
+.header__button {
+  background-image: url("../images/button-cart.png");
+  width: 115px;
+  height: 38px;
+}
+
+.header__button_position {
+  margin: 0 3% 0 0;
+}
+
+.button {
+  background-size: cover;
+  background-color: #ffffff00;
+  border: none;
+  padding: 0;
+}
+
+/* Стили для основной части */
+
+.page__main {
+  max-width: 100%;
+  grid-row: 2/3;
+}
+
+.main {
+  display: grid;
+  grid-template: 18vh 85vh 45vh / 6.5% 29.5% 29.5% 29.5% 6.5%;
+}
+
+/* Стили для главного заголовка */
+
+.main__heading {
+  grid-area: 1/1/2/6;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: "Intro Bold Caps";
+  font-weight: 400;
+}
+
+.main__title_position {
+  margin: 0 0 0 8.5%;
+}
+
+.main__title_size {
+  font-size: 60px;
+  letter-spacing: 0.1rem;
+  line-height: 125%;
+}
+
+/* Общие стили для секций */
+
+.main__section {
+  padding: 25px;
+}
+
+.title {
+  font-family: "Intro Bold Caps";
+  font-weight: 400;
+}
+
+.section__title_position {
+  margin: 23px 0 10px 0;
+}
+
+.section__title_position_alt {
+  margin: 0 0 10px 0;
+}
+
+.section__title_size {
+  font-size: 30px;
+  line-height: 120%;
+}
+
+.text {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+/* Стили для секции 1 с картинкой */
+
+.main__section_cell_first {
+  grid-area: 2/2/3/3;
+}
+
+/* Стили для секции 2 с картинкой */
+
+.main__section_cell_second {
+  grid-area: 2/3/3/4;
+}
+
+/* Стили для секции 3 с картинкой */
+
+.main__section_cell_third {
+  grid-area: 2/4/3/5;
+}
+
+/* Стили для секции 4 */
+
+.main__section_cell_fourth {
+  grid-area: 3/2/4/3;
+}
+
+/* Стили для секции 5 */
+
+.main__section_cell_fifth {
+  grid-area: 3/3/4/4;
+}
+
+/* Стили для секции 6 с формой */
+
+.main__section_cell_sixth {
+  grid-area: 3/4/4/5;
+  padding: 0px 25px 25px 25px;
+}
+
+.form__block {
+  background-color: #ec615b;
+}
+
+.section__title_color_white {
+  color: white;
+}
+
+.section__title_padding_alt {
+  padding: 25px 0 0 20px;
+}
+
+.form__input {
+  width: 84%;
+}
+
+.form__input_position {
+  margin: 0 0 23px 20px;
+  padding: 9px 0 9px 14px;
+}
+
+.form__input::-moz-placeholder {
+  color: black;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: black;
+}
+
+.form__input_border {
+  border: 0px;
+}
+
+.form__button {
+  background-image: url("../images/button.png");
+  width: 135px;
+  height: 38px;
+}
+
+.form__button_position {
+  margin: 0 0 55px 20px;
+}
+
+/* Стили для блока с меню или футера */
+
+.page__footer {
+  grid-row: 3/4;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer__nav {
+  display: flex;
+  width: 37%;
+}
+
+.footer__nav_position {
+  margin: 0 0 0 8.5%;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu__item_color_black,
+.menu__link_color_black:link,
+.menu__link_color_black:visited {
+  color: #000000;
+}
+
+.link {
+  text-decoration: none;
+}
