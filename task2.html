@@ -15,70 +15,61 @@
       crossorigin="anonymous"
     />
     <style>
-      .no-padding {
-        padding-right: 0;
-        padding-left: 0;
-      }
       .logo {
-        margin-left: 12%;
         font-size: 1.2em;
-        color: white;
       }
-      .navbar-collapse {
-        margin-right: 12%;
-      }
+
       .main-container-1 {
         background-color: rgb(236, 236, 252);
         border-radius: 5px;
         padding: 50px 30px;
       }
+
       img {
         height: 12em;
       }
+
       a {
         text-decoration: none;
       }
-      footer {
-        padding: 20px;
-      }
     </style>
   </head>
+
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col no-padding">
-          <nav
-            class="navbar navbar-expand-lg bg-body-tertiary bg-dark"
-            data-bs-theme="dark"
-          >
-            <div class="container-fluid">
-              <div class="logo">Start Bootstrap</div>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
+    <div class="container-fluid bg-dark">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="text-white logo">Start Bootstrap</div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white-50 active"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-50" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-50" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-50" href="#">Contact</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
     </div>
+
     <div class="container pt-4">
       <div class="row justify-content-center">
-        <div class="col-lg-10">
+        <div class="col">
           <div class="container main-container-1">
             <h1 class="display-4">A Warm Welcome!</h1>
             <p>
@@ -91,8 +82,9 @@
           </div>
         </div>
       </div>
+
       <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
-        <div class="col p-4">
+        <div class="col mt-4 mb-4">
           <div class="card h-100" style="width: 100%">
             <img
               src="./assets/images/grass-7168204_960_720.jpeg"
@@ -111,7 +103,8 @@
             </div>
           </div>
         </div>
-        <div class="col p-4">
+
+        <div class="col mt-4 mb-4">
           <div class="card h-100" style="width: 100%">
             <img
               src="./assets/images/1644716946_1-fikiwiki-com-p-les-krasivie-kartinki-na-rabochii-stol-1.jpeg"
@@ -131,7 +124,8 @@
             </div>
           </div>
         </div>
-        <div class="col p-4">
+
+        <div class="col mt-4 mb-4">
           <div class="card h-100" style="width: 100%">
             <img
               src="./assets/images/1667402471_2-celes-club-p-fon-nebo-zakat-instagram-4.jpeg"
@@ -150,7 +144,8 @@
             </div>
           </div>
         </div>
-        <div class="col p-4">
+
+        <div class="col mt-4 mb-4">
           <div class="card h-100" style="width: 100%">
             <img
               src="./assets/images/e6f63070b2e74b1aa1a0feaef8802cf8.max-2500x1500.jpg"
@@ -174,7 +169,7 @@
     </div>
 
     <footer class="bg-dark text-center text-white">
-      <div class="text-center p-3">
+      <div class="text-center p-3 pt-5">
         Copyright ©
         <a class="text-white" href="https://mdbootstrap.com/"
           >Your Website 2023</a
