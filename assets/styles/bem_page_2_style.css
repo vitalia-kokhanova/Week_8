@@ -11,7 +11,7 @@
 }
 
 .page {
-  max-width: 100%;
+  width: 100%;
   display: grid;
   grid-template-rows: 20vh 145vh 28vh;
 }
@@ -19,7 +19,7 @@
 /* Стили для шапки */
 
 .page__header {
-  max-width: 100%;
+  width: 100%;
   grid-row: 1/2;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .header__block {
-  max-width: 89.6%;
+  width: 89.6%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +64,7 @@
 /* Стили для основной части */
 
 .page__main {
-  max-width: 100%;
+  width: 100%;
   grid-row: 2/3;
 }
 
