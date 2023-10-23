@@ -11,24 +11,18 @@
 }
 
 .page {
-  max-width: 100%;
+  width: 100%;
   display: grid;
   grid-template-rows: 10% 95%;
 }
 
 /* Стили для шапки */
 
-.page__header {
-  max-width: 100%;
-  grid-row: 1/2;
-}
-
 .header {
+  width: 100%;
+  grid-row: 1/2;
   display: flex;
   justify-content: center;
-}
-
-.header_align_end {
   align-items: end;
 }
 
@@ -59,12 +53,9 @@
 
 /* Стили для основной части */
 
-.page__main {
-  max-width: 100%;
-  grid-row: 2/3;
-}
-
 .main {
+  width: 100%;
+  grid-row: 2/3;
   display: grid;
   grid-template: 75% 25% / 8% 37.6% 1fr;
 }
@@ -84,7 +75,7 @@
   font-weight: 400;
 }
 
-.main__title_position {
+.main__title {
   margin: 0 0 10px 0;
 }
 
